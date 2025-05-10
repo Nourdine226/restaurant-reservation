@@ -3,15 +3,16 @@
 A simple restaurant reservation system built with Angular. This project allows customers to book tables and receive instant reservation confirmations.
 
 ## Features
-Reservation form with validation
-Instant confirmation of reservations
-User-friendly design
-Modular structure for easy maintenance
+
+-**Reservation form with validation**
+-**Instant confirmation of reservations**
+-**User-friendly design**
+-**Modular structure for easy maintenance**
 
 ## Technologies Used
--This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
--TypeScript (interface for reservations)
--HTML & SCSS (styling and structure)
+-**This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.**
+-**TypeScript** (interface for reservations)
+-**HTML & SCSS** (styling and structure)
 
 ##Concepts Utilized
 - **Interface (TypeScript)**: `reservation.interface.ts`
@@ -80,15 +81,15 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Screenshots (interface) end explain
 
 ### Empty form
-![Empty form](../Restaurant-Reservation_app/public/assets/images/formulaire%201.png)
+![Empty form](public/assets/images/formulaire%201.png)
 The user can enter their personal information, date, time of booking, number of guests and special requests and then submit the form with a button reserve.
 
 ### Completed form
-![Completed form](../Restaurant-Reservation_app/public/assets/images/formulaire%202.png)
+![Completed form](public/assets/images/formulaire%202.png)
 Once the user has entered all the information the form looks like this, ready to be submitted.
 
 ### Confirmation
-![Confirmation](../Restaurant-Reservation_app/public/assets/images/confirmation.png)
+![Confirmation](public/assets/images/confirmation.png)
 After submitting the form, the user sees a confirmation page that summarizes all the booking details, including any special requests.
 
 ## Additional Resources
