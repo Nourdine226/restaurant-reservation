@@ -1,0 +1,6 @@
+<div class="confirmation">
+    <h2>Reservation Confirmed!</h2>
+    <p>Thank you, {{ reservation.name }}! Your reservation is confirmed for {{ reservation.date | date:'fullDate' }} at {{ reservation.time }} for {{ reservation.guests }} guests.</p>
+    <p>We look forward to serving you!</p>
+    <p *ngIf="reservation.specialRequests">Special Requests: {{ reservation.specialRequests }}</p>
+  </div>

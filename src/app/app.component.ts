@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Reservation } from './reservation.interface';
+import { ReservationFormComponent } from './reservation-form/reservation-form.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [ReservationFormComponent, ConfirmationComponent, NgIf],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Restaurant-Reservation_app';
+  confirmedReservation: Reservation | null = null;
+
+  onReservationCreated(reservation: Reservation) {
+    this.confirmedReservation = reservation;
+  }
 }
