@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Reservation } from '../reservation.interface';
@@ -10,7 +10,7 @@ import { Reservation } from '../reservation.interface';
   templateUrl: './reservation-form.component.html',
   styleUrls: ['./reservation-form.component.scss']
 })
-export class ReservationFormComponent {
+export class ReservationFormComponent implements OnInit, OnChanges {
   @Output() reservationCreated = new EventEmitter<Reservation>();
 
   name: string = '';
@@ -20,6 +20,14 @@ export class ReservationFormComponent {
   time: string = '';
   guests: number = 1;
   specialRequests: string = '';
+
+  ngOnInit() {
+    console.log("ReservationFormComponent initialized.");
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    console.log("Form changes detected:", changes);
+  }
 
   submitReservation() {
     const reservation: Reservation = {

@@ -8,6 +8,10 @@ A simple restaurant reservation system built with Angular. This project allows c
 -**Instant confirmation of reservations**
 -**User-friendly design**
 -**Modular structure for easy maintenance**
+-**Efficient Component Communication**  
+-**Reusable Components with Content Projection**  
+-**Basic Routing for Improved Navigation**  
+-**Basic Forms for Input Handling and Validation**  
 
 ## Technologies Used
 -**This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.**
@@ -15,15 +19,21 @@ A simple restaurant reservation system built with Angular. This project allows c
 -**HTML & SCSS** (styling and structure)
 
 ##Concepts Utilized
-- **Interface (TypeScript)**: `reservation.interface.ts`
-- **Interpolation**: Data binding in the confirmation component.
-- **Property Binding**: Passing reservation data between components.
-- **Event Binding**: Handling form submissions.
-- **Two-way Binding**: Syncing form inputs.
-- **Structural Directives** (`*ngIf`, `*ngFor`): Conditional rendering.
-- **Attribute Directives** (`ngClass`): Dynamic styling (potential for future improvements).
-- **Pipes**: Date formatting in the confirmation component.
-- **Parent-Child Communication** (`@Input()`, `@Output()`): Data exchange between components.
+-**Interface (TypeScript)**: `reservation.interface.ts`
+-**Interpolation**: Data binding in the confirmation component.
+-**Property Binding**: Passing reservation data between components.
+-**Event Binding**: Handling form submissions.
+-**Two-way Binding**: Syncing form inputs.
+-**Structural Directives** (`*ngIf`, `*ngFor`): Conditional rendering.
+-**Attribute Directives** (`ngClass`): Dynamic styling (potential for future improvements).
+-**Pipes**: Date formatting in the confirmation component.
+-**Parent-Child Communication** (`@Input()`, `@Output()`): Data exchange between components.
+-**Component Lifecycle Hooks** (`ngOnInit`, `ngOnChanges`): Managing component behavior over time.  
+-**ViewChild and ContentChild**: ccessing and manipulating child components.  
+-**Content Projection (`<ng-content>`)**: Reusing content across multiple components.  
+-**Basic Services**: Shared functionality across components.  
+-**Basic Routes**: Simple navigation between components.  
+-**Basic Forms**: Managing and validating user input.  
 
 
 ## Development server
@@ -82,15 +92,18 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 ### Empty form
 ![Empty form](public/assets/images/formulaire%201.png)
-The user can enter their personal information, date, time of booking, number of guests and special requests and then submit the form with a button reserve.
+
+The user can enter their personal information, the date, time of reservation, the number of guests and special requests, and then submit the form with a reserve button. Also, we notice a guest (1) by default in the guest box because the reservation is valid for at least one guest.
 
 ### Completed form
 ![Completed form](public/assets/images/formulaire%202.png)
+
 Once the user has entered all the information the form looks like this, ready to be submitted.
 
 ### Confirmation
 ![Confirmation](public/assets/images/confirmation.png)
-After submitting the form, the user sees a confirmation page that summarizes all the booking details, including any special requests.
+
+After the form is submitted, the user sees a confirmation message summarizing all the booking details, including the reservation date, time, number of guests, and any special requests. This final confirmation step ensures that the user is fully informed about their reservation and can review the details before their visit. any special requests.
 
 ## Additional Resources
 

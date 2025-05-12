@@ -1,3 +1,11 @@
-<h1>Restaurant Reservation</h1>
-<app-reservation-form (reservationCreated)="onReservationCreated($event)"></app-reservation-form>
-<app-confirmation *ngIf="confirmedReservation" [reservation]="confirmedReservation"></app-confirmation>
+<div class="container">
+  <app-reservation-form (reservationCreated)="onReservationCreated($event)">
+    <h2>Make a Reservation</h2>
+  </app-reservation-form>
+
+  <div *ngIf="confirmedReservation" class="confirmation">
+    <h3>Reservation Confirmed!</h3>
+    <p>Thank you, {{ confirmedReservation.name }}! Your reservation is confirmed for {{ confirmedReservation.date | date:'fullDate' }} at {{ confirmedReservation.time }} for {{ confirmedReservation.guests }} guests.</p>
+    <p>Special Requests: {{ confirmedReservation.specialRequests || 'None' }}</p>
+  </div>
+</div>
