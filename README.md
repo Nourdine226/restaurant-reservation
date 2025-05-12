@@ -4,36 +4,35 @@ A simple restaurant reservation system built with Angular. This project allows c
 
 ## Features
 
--**Reservation form with validation**
--**Instant confirmation of reservations**
--**User-friendly design**
--**Modular structure for easy maintenance**
--**Efficient Component Communication**  
--**Reusable Components with Content Projection**  
--**Basic Routing for Improved Navigation**  
--**Basic Forms for Input Handling and Validation**  
+- **Reservation form with validation**
+- **Instant confirmation of reservations**
+- **User friendly design**
+- **Efficient Component Communication**  
+- **Reusable Components with Content Projection**  
+- **Basic Routing for Improved Navigation**  
+- **Basic Forms for Input Handling and Validation**  
 
 ## Technologies Used
--**This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.**
--**TypeScript** (interface for reservations)
--**HTML & SCSS** (styling and structure)
+- **This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.**
+- **TypeScript** (interface for reservations)
+- **HTML & SCSS** (styling and structure)
 
 ##Concepts Utilized
--**Interface (TypeScript)**: `reservation.interface.ts`
--**Interpolation**: Data binding in the confirmation component.
--**Property Binding**: Passing reservation data between components.
--**Event Binding**: Handling form submissions.
--**Two-way Binding**: Syncing form inputs.
--**Structural Directives** (`*ngIf`, `*ngFor`): Conditional rendering.
--**Attribute Directives** (`ngClass`): Dynamic styling (potential for future improvements).
--**Pipes**: Date formatting in the confirmation component.
--**Parent-Child Communication** (`@Input()`, `@Output()`): Data exchange between components.
--**Component Lifecycle Hooks** (`ngOnInit`, `ngOnChanges`): Managing component behavior over time.  
--**ViewChild and ContentChild**: ccessing and manipulating child components.  
--**Content Projection (`<ng-content>`)**: Reusing content across multiple components.  
--**Basic Services**: Shared functionality across components.  
--**Basic Routes**: Simple navigation between components.  
--**Basic Forms**: Managing and validating user input.  
+- **Interface (TypeScript)**: `reservation.interface.ts`
+- **Interpolation**: Data binding in the confirmation component.
+- **Property Binding**: Passing reservation data between components.
+- **Event Binding**: Handling form submissions.
+- **Two-way Binding**: Syncing form inputs.
+- **Structural Directives** (`*ngIf`, `*ngFor`): Conditional rendering.
+- **Attribute Directives** (`ngClass`): Dynamic styling (potential for future improvements).
+- **Pipes**: Date formatting in the confirmation component.
+- **Parent-Child Communication** (`@Input()`, `@Output()`): Data exchange between components.
+- **Component Lifecycle Hooks** (`ngOnInit`, `ngOnChanges`): Managing component behavior over time.  
+- **ViewChild and ContentChild**: ccessing and manipulating child components.  
+- **Content Projection (`<ng-content>`)**: Reusing content across multiple components.  
+- **Basic Services**: Shared functionality across components.  
+- **Basic Routes**: Simple navigation between components.  
+- **Basic Forms**: Managing and validating user input.  
 
 
 ## Development server
